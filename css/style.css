@@ -176,7 +176,7 @@ h3 {
 
 .skill-item-desc p {
     margin: 0;
-    padding-left: 85px;
+    padding-left: 100px;
 }
 
 /*===========================================================
@@ -218,4 +218,165 @@ h3 {
     background-image: url("../img/Glen About.jpg");
     border-left: 300px solid white;
     border-top: 700px solid transparent;
+}
+
+#about-btn a {
+    width: 100%;
+}
+
+/*===========================================================
+                CAREER
+===========================================================*/
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+.career-content-title h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.career-desc p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*===========================================================
+                SOCIAL
+===========================================================*/
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-white i {
+    color: #ffffff;
+}
+
+.social-icon i:hover {
+    color: #2a3439;
+    background-color: #ffffff;
+}
+
+/*===========================================================
+                CONTACT
+===========================================================*/
+
+footer {
+    background-color: #2a3439;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+#contact-left h3, #contact-right h3 {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-image: url("../img/world-map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #ffffff;
+}
+
+address strong, #phone-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/*===========================================================
+                FOOTER
+===========================================================*/
+
+#footer-bottom {
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #ffffff;
+}
+
+#footer-menu {
+    float: right;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #003296
 }
