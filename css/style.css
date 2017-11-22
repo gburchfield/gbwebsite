@@ -286,6 +286,10 @@ h3 {
     color: #ffffff;
 }
 
+.icon-gray i {
+    color: #2a3439;
+}
+
 .social-icon i:hover {
     color: #2a3439;
     background-color: #ffffff;
@@ -437,4 +441,28 @@ form .form-control {
 
 .glen-top-nav ul.navbar-nav > li.active > a {
     color: #003296;
+}
+
+/*===========================================================
+                PROJECTS
+===========================================================*/
+
+.project-member {
+    margin: 0 15px;
+}
+
+.project-img {
+    width: 300px;
+}
+
+.project-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.project-member-name {
+    font-size: 22px;
+    font-weight:700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    color: #2a3439;
 }

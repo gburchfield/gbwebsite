@@ -43,3 +43,33 @@ $(function () {
         }, 1250, "easeInOutExpo");
     })
 });
+
+//PROJECTS
+
+$(function () {
+    $("#project-members").owlCarousel({
+        items:2,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        loop: true,
+        responsive : {
+            0: {
+                items:1
+            },
+            768: {
+                items:2
+            }
+        }
+    });
+});
+
+//Close mobile menu on click
+
+$(function () {
+
+    $(".navbar-collapse ul li a").on("click touch", function(){
+        $(".navbar-toggle").click();
+    });
+
+});
