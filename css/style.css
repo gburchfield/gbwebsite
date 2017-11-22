@@ -3,7 +3,7 @@
     
     Font Family         : Roboto Condensed
 
-    Space Cadet         : #0d2251       (Buttons, Icons, Links, Lines & Backgrounds)
+    Glen Blue           : #003296       (Buttons, Icons, Links, Lines & Backgrounds)
     Gunmetal            : #2a3439       (Headings)
     Nevada              : #64707b       (Paragraph)
     White               : #ffffff       (Text with Black Background)
@@ -379,4 +379,62 @@ form .form-control {
 
 #footer-menu a:hover {
     color: #003296
+}
+
+/*===========================================================
+                NAVBAR
+===========================================================*/
+
+.navbar {
+    padding: 20px 0;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+}
+
+.glen-top-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 7px 0;
+}
+
+.glen-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background: none;
+    color: #003296;
+}
+
+.navbar-toggle {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid #ffffff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #ffffff;
+
+}
+
+.navbar-collapse {
+    max-height: none !important;
+}
+
+.glen-top-nav ul.navbar-nav > li.active > a {
+    color: #003296;
 }
