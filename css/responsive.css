@@ -72,7 +72,7 @@
         border-top: 0;
         width: 100%;
         height: 350px;
-        background-position: right;
+        background-image: url("../img/GlenAbout-Mobile.png");
     }
 
     #about-content-box {
@@ -90,7 +90,7 @@
     }
 
     #home-cover {
-        background-position: right;
+        background-image: url("../img/bg-mobile.png");
     }
 
     #about-btn a {
