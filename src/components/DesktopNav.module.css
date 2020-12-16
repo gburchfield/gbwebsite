@@ -1,0 +1,119 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 25%;
+    background-color: var(--navigation-bg-color);
+    display: inline-block;
+}
+
+.leftWrap {
+    position: absolute;
+    height: 100%;
+    width: calc(100vw - 75%);
+    right: 0;
+    background-color: var(--navigation-bg-color);
+    z-index: -1;
+    display: block;
+}
+
+.header {
+    position: fixed;
+    min-width: 200px;
+    display: table;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 30px;
+}
+
+.siteBrand {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+}
+
+.siteBrand > span {
+    display: block;
+}
+
+.siteBrand > span:nth-of-type(2) {
+    float: right;
+}
+
+.siteBrand > span::first-letter {
+    color: var(--site-brand-first-letter-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.mainNavigation {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mainNavigation > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainNavigation > ul > li {
+    margin: 8px 0;
+    position: relative;
+}
+
+.mainNavigation > ul > li.current ::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 19px;
+    background: #e71d36;
+    left: -31px;
+    top: 1px;
+}
+
+.mainNavigation > ul > li > a {
+    transition: color 500ms ease-in;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.mainNavigation > ul > li.current > a {
+    color: rgba(255,255,255,0.4);
+}
+
+.socialLinks {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLinks > li {
+    display: inline-block;
+}
+
+.socialLinks > li > a {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 0;
+    color: #ffffff;
+    padding: 0.2rem;
+}
+
+.socialLinks > li > a > svg{
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,38 @@
+:root {
+    --navigation-bg-color: #011627;
+    --site-brand-first-letter-color: #990000;
+    color: green;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right:15px;
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        max-width: 950px;
+    }
+
+}
+
+@media (min-width: 1230px) {
+    main {
+        max-width: 1170px;
+    }
+}
