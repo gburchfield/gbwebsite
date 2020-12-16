@@ -2,13 +2,7 @@ import * as React from "react"
 import DesktopNav from "../components/DesktopNav";
 
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-// styles
-const pageStyles = {
-    height: "100vh",
-    color: "#232129",
-    fontFamily: "-apple-system, Roboto, sans-serif, serif",
-    backgroundColor: "#334452"
-}
+import Content from "../components/Content";
 
 const siteConfig = {
     siteBrand: "Unsuccessful Technologies",
@@ -46,12 +40,15 @@ const siteConfig = {
 
 // markup
 const IndexPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Glen Burchfield</title>
-        <DesktopNav siteConfig={siteConfig}/>
-    </main>
-  )
+    return (
+        <main>
+            <div>
+                <title>Glen Burchfield</title>
+                <DesktopNav siteConfig={siteConfig}/>
+                <Content siteConfig={siteConfig}/>
+            </div>
+        </main>
+    )
 }
 
 export default IndexPage

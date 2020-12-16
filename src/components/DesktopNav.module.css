@@ -8,7 +8,7 @@
 
 .leftWrap {
     position: absolute;
-    height: 100%;
+    height: 99999%;
     width: calc(100vw - 75%);
     right: 0;
     background-color: var(--navigation-bg-color);
