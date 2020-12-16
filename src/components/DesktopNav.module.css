@@ -68,7 +68,7 @@
     content: '';
     width: 1px;
     height: 19px;
-    background: #e71d36;
+    background: var(--site-brand-first-letter-color);
     left: -31px;
     top: 1px;
 }

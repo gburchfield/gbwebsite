@@ -51,14 +51,6 @@ function MainNavigation({sections}, active, setActive) {
     )
 }
 
-function GetSections(current, sections) {
-    console.log('current',current)
-    return sections.map((section, i) => {
-        section.current = i === current
-        return {...section}
-    })
-}
-
 function SocialLinks(siteConfig) {
     const {socialLinks} = siteConfig
     return (
