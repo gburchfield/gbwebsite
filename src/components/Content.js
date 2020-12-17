@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Content.module.css'
 import Header from "./Header";
+import HeaderButtons from "./HeaderButtons";
 
 export default function Content({siteConfig}) {
 
@@ -10,6 +11,7 @@ export default function Content({siteConfig}) {
             </div>
             <div className={styles.content}>
                 <Header config={GetSection("Header", siteConfig)}/>
+                <HeaderButtons />
             </div>
         </div>
     )

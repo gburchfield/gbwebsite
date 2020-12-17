@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+}
+
+.container > div:nth-of-type(1) {
+    display: flex;
+}
+
+.container > div:nth-of-type(1) > a {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 23px 0px 21px 0px;
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container > div:nth-of-type(1) > a:nth-of-type(1) {
+    background-color: var(--greeting-color);
+}
+
+.container > div:nth-of-type(1) > a:nth-of-type(2) {
+    background-color: var(--navigation-bg-color);
+}
