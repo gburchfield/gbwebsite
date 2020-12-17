@@ -2,7 +2,8 @@
     --navigation-bg-color: #011627;
     --content-bg-color: #334452;
     --site-brand-first-letter-color: #990000;
-    color: green;
+    --greeting-color: #e71d36;
+    color: #151b25;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     box-sizing: border-box;

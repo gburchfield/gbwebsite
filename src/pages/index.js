@@ -8,7 +8,13 @@ const siteConfig = {
     siteBrand: "Unsuccessful Technologies",
     sections: [
         {
-            name:"home"
+            name:"home",
+            component: "Header",
+            data: {
+                greeting: "Hi, I'm",
+                person_name: "Glen Burchfield",
+                position: "Software Application Developer"
+            }
         },
         {
             name:"about"

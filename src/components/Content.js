@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Content.module.css'
+import Header from "./Header";
 
 export default function Content({siteConfig}) {
 
@@ -8,8 +9,14 @@ export default function Content({siteConfig}) {
             <div className={styles.rightWrap}>
             </div>
             <div className={styles.content}>
-                <h1>Content</h1>
+                <Header config={GetSection("Header", siteConfig)}/>
             </div>
         </div>
     )
+}
+
+function GetSection(name, siteConfig) {
+    const {sections} = siteConfig
+    const result = sections.filter(x => x.component === name)
+    return result[0]
 }
