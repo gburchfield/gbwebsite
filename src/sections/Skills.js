@@ -1,5 +1,7 @@
 import React from "react";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDesktop, faServer, faCogs, faTerminal, faPenSquare,} from "@fortawesome/free-solid-svg-icons";
+import {faAmazon} from "@fortawesome/free-brands-svg-icons";
 export default function Skills() {
 
     return (
@@ -21,7 +23,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-desktop fa-3x"></i>
+                                    <FontAwesomeIcon icon={faDesktop} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Client Side</h3>
@@ -38,7 +40,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-server fa-3x"></i>
+                                    <FontAwesomeIcon icon={faServer} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Server Side</h3>
@@ -55,7 +57,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-cogs fa-3x"></i>
+                                    <FontAwesomeIcon icon={faCogs} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Automation</h3>
@@ -72,7 +74,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-amazon fa-3x"></i>
+                                    <FontAwesomeIcon icon={faAmazon} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Amazon Web Services</h3>
@@ -90,7 +92,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-terminal fa-3x"></i>
+                                    <FontAwesomeIcon icon={faTerminal} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Programing</h3>
@@ -107,7 +109,7 @@ export default function Skills() {
                             <div className="skill-item">
 
                                 <div className="skill-item-icon">
-                                    <i className="fa fa-pencil-square-o fa-3x"></i>
+                                    <FontAwesomeIcon icon={faPenSquare} size="3x" />
                                 </div>
                                 <div className="skill-item-heading">
                                     <h3>Web Design</h3>

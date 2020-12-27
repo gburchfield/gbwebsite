@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
 
@@ -34,8 +36,9 @@ export default function About() {
                                     <div id="about-btn" className="content-title wow animated fadeInUp"
                                          data-wow-delay=".5s" data-wow-duration="1s">
                                         <a href="http://www.linkedin.com/in/glen-burchfield"
-                                           className="btn btn-lg btn-general btn-blue" role="button"><i
-                                            className="fa fa-linkedin-square fa-2x"></i></a>
+                                           className="btn btn-lg btn-general btn-blue" role="button">
+                                            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

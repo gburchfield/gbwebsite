@@ -1,4 +1,7 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDesktop} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
 
@@ -27,10 +30,12 @@ export default function Projects() {
                                 <div className="project-member-info text-center">
                                     <h4 className="project-member-name">Demo Project</h4>
                                     <ul className="social-list">
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-github"></i></a></li>
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-youtube"></i></a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faGithub} size="3x" />
+                                        </a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faYoutube} size="3x" />
+                                        </a></li>
                                     </ul>
                                 </div>
 
@@ -46,10 +51,12 @@ export default function Projects() {
                                 <div className="project-member-info text-center">
                                     <h4 className="project-member-name">Demo Project</h4>
                                     <ul className="social-list">
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-github"></i></a></li>
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-youtube"></i></a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faGithub} size="3x" />
+                                        </a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faYoutube} size="3x" />
+                                        </a></li>
                                     </ul>
                                 </div>
 
@@ -64,10 +71,13 @@ export default function Projects() {
                                 <div className="project-member-info text-center">
                                     <h4 className="project-member-name">Demo Project</h4>
                                     <ul className="social-list">
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-github"></i></a></li>
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-youtube"></i></a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faGithub} size="3x" />
+                                        </a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faYoutube} size="3x" />
+
+                                        </a></li>
                                     </ul>
                                 </div>
 
@@ -82,10 +92,12 @@ export default function Projects() {
                                 <div className="project-member-info text-center">
                                     <h4 className="project-member-name">Demo Project</h4>
                                     <ul className="social-list">
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-github"></i></a></li>
-                                        <li><a href="#" className="social-icon icon-gray"><i
-                                            className="fa fa-youtube"></i></a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faGithub} size="3x" />
+                                        </a></li>
+                                        <li><a href="#" className="social-icon icon-gray">
+                                            <FontAwesomeIcon icon={faYoutube} size="3x" />
+                                        </a></li>
                                     </ul>
                                 </div>
 
