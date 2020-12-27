@@ -1,0 +1,36 @@
+{
+  "name": "gbwebsite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Glen Burchfield's Personal Website",
+  "dependencies": {
+    "gatsby": "^2.29.2",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "version": "git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gburchfield/gbwebsite.git"
+  },
+  "keywords": [
+    "Glen",
+    "Gren"
+  ],
+  "author": "Unsuccessful Technologies LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gburchfield/gbwebsite/issues"
+  },
+  "homepage": "https://github.com/gburchfield/gbwebsite#readme"
+}
