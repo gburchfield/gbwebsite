@@ -1,2 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./src/styles/global.css"
+import "./static/css/animate/animate.css"
+import "./static/css/magnific-popup/magnific-popup.css"
+import "./static/css/responsive.css"
