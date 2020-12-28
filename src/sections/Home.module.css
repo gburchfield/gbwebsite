@@ -1,0 +1,44 @@
+
+.home {
+    height: 100vh;
+}
+.homeCover {
+    position: fixed;
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    background: linear-gradient(to top right, #000000, #101010, #303030, #000000);
+    animation-delay: .1s;
+}
+
+.homeContainer {
+    height: 100%;
+}
+
+.homeHeading {
+    margin: 20px;
+    animation-delay: .5s;
+}
+
+.homeBtn {
+    animation-delay: 1s;
+}
+
+.homeContentBox {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.homeContentBoxInner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.homeCover, .homeHeading, .homeBtn {
+    animation-duration: .5s;
+}
+
+
