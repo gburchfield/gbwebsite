@@ -6,13 +6,6 @@ module.expoerts = {
     },
     plugins: [
         "gatsby-plugin-react-helmet",
-        {
-            resolve: `gatsby-plugin-google-fonts`,
-            options: {
-                fonts: [`Roboto+Condensed:300,300i,400,400i,700,700i`],
-                display: `swap`
-            }
-        },
         "gatsby-plugin-fontawesome-css"
     ]
 }

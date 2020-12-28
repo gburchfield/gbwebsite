@@ -2,6 +2,8 @@ import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDesktop, faServer, faCogs, faTerminal, faPenSquare,} from "@fortawesome/free-solid-svg-icons";
 import {faAmazon} from "@fortawesome/free-brands-svg-icons";
+import styles from "./Skills.module.css"
+
 export default function Skills() {
 
     return (
@@ -127,7 +129,6 @@ export default function Skills() {
                 </div>
 
             </div>
-
         </section>
     )
 }

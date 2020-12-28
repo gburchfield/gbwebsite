@@ -2,6 +2,7 @@ import React, {useRef} from "react";
 import {useScrollPosition} from "@n8tb1t/use-scroll-position";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import styles from "./Header.module.css"
+import GlenLogo from "../components/GlenLogo";
 
 export default function Header({navLinks, logoSrc}) {
     const navBarRef = useRef(null)
@@ -24,7 +25,7 @@ export default function Header({navLinks, logoSrc}) {
                 <Navbar collapseOnSelect expand={"lg"} ref={navBarRef} fixed={"top"} className={`${styles.navbar}`}>
 
                     <Navbar.Brand href={"#home"}>
-                        <img src={logoSrc} alt="" width="75px" height="40px" />
+                        <GlenLogo size={"lg"}/>
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls={"navigation-menu"}/>
