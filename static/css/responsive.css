@@ -1,0 +1,103 @@
+
+/* Large Device */
+
+@media (min-width:1200px) {
+
+
+
+}
+
+/* Medium Device */
+
+@media (min-width: 992px) and (max-width:1199) {
+
+
+
+}
+
+/* Small Device */
+
+@media (min-width:768px) and (max-width:991px) {
+
+    #bg-img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .glen-nav-wrapper {
+        padding: 0 15px;
+    }
+
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+
+    #footer-copyrights {
+        text-align: center;
+    }
+
+}
+
+/* Extra Small Device */
+
+@media (max-width: 767px) {
+
+    #bg-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .glen-nav-wrapper {
+        padding: 0 15px;
+    }
+
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+        background-image: url("../img/GlenAbout-Mobile.png");
+    }
+
+    #about-content-box {
+        margin-bottom: 100px;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box-inner {
+        padding-top: 20px;
+    }
+
+    #footer-copyrights {
+        text-align: center;
+    }
+
+    #home-cover {
+        background-image: url("../img/bg-mobile.png");
+    }
+
+    #about-btn a {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    
+
+}

@@ -1,44 +1,48 @@
-import React from "react";
+import React, {useRef} from "react";
+import {useScrollPosition} from "@n8tb1t/use-scroll-position";
+import {Container, Nav, Navbar} from "react-bootstrap";
+import styles from "./Header.module.css"
 
-export default function Header() {
+export default function Header({navLinks, logoSrc}) {
+    const navBarRef = useRef(null)
+    const NAV_SCROLL_NOT_TOP = styles.navScrollNotTop
+
+    useScrollPosition(({prevPos, currPos}) => {
+        const currentHeight = currPos.y * -1
+        const hasNotTopClass = navBarRef.current.classList.contains(NAV_SCROLL_NOT_TOP)
+        if(currentHeight > 100 && !hasNotTopClass) {
+            navBarRef.current.classList.add(NAV_SCROLL_NOT_TOP)
+        } else if (currentHeight <= 100 && hasNotTopClass) {
+            navBarRef.current.classList.remove(NAV_SCROLL_NOT_TOP)
+        }
+
+    })
 
     return (
         <header>
 
-            <nav className="navbar navbar-fixed-top" role="navigation">
+                <Navbar collapseOnSelect expand={"lg"} ref={navBarRef} fixed={"top"} className={`${styles.navbar}`}>
 
-                <div className="container-fluid">
+                    <Navbar.Brand href={"#home"}>
+                        <img src={logoSrc} alt="" width="75px" height="40px" />
+                    </Navbar.Brand>
 
-                    <div className="glen-nav-wrapper">
+                    <Navbar.Toggle aria-controls={"navigation-menu"}/>
 
-                        <div className="navbar-header">
-                            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#glen-menu">
-                                <span className="sr-only">Toggle Navigation</span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
-                            <a href="#home" className="navbar-brand">
-                                <img src="img/GB_Logo_Icon.png" alt="" width="75px" height="40px" />
-                            </a>
-                        </div>
+                    <Navbar.Collapse id={"navigation-menu"}>
+                        <Nav className={styles.nav}>
+                            {
+                                navLinks.map(({href, name},i) => {
+                                    return (
+                                        <Nav.Link key={`nav-link-${i}`} href={href}>{name}</Nav.Link>
 
-                        <div className="collapse navbar-collapse" id="glen-menu">
-                            <ul className="nav navbar-nav">
-                                <li><a className="smooth-scroll" href="#home">Home</a></li>
-                                <li><a className="smooth-scroll" href="#skills">Skills</a></li>
-                                <li><a className="smooth-scroll" href="#about">About</a></li>
-                                <li><a className="smooth-scroll" href="#career">Career</a></li>
-                                <li><a className="smooth-scroll" href="#projects">Projects</a></li>
-                                <li><a className="smooth-scroll" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
+                                    )
+                                })
+                            }
+                        </Nav>
+                    </Navbar.Collapse>
 
-                    </div>
-
-                </div>
-
-            </nav>
+                </Navbar>
 
         </header>
     )
